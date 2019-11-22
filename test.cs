@@ -1,6 +1,8 @@
-public class Program
+using System;
+class Program
 {
-  void Main()
-  {
-  }
+    public static void Main(string[] args)
+    {
+        Console.WriteLine(""Hello, world!"");
+    }
 }
