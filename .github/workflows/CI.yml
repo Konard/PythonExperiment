@@ -11,4 +11,4 @@ jobs:
       run:
         |
         python3 -m pip install cs2cpp
-        python3 -c 'from cs2cpp import CSharpToCpp; print (CSharpToCpp().Transform(""))'
+        python3 -c 'from cs2cpp import CSharpToCpp; print CSharpToCpp(useRegex=True).Transform("")'
