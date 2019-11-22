@@ -12,3 +12,5 @@ jobs:
         |
         python3 -m pip install cs2cpp
         python3 -c 'from cs2cpp import CSharpToCpp; print (CSharpToCpp(useRegex=True).Transform(""))'
+        python3 -c 'import retranslator, cs2cpp; retranslator.TranslatorCLI(args=["test.cs"], translator=cs2cpp.CSharpToCpp, extension=".cpp").run()'
+        
