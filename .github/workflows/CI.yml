@@ -10,5 +10,6 @@ jobs:
     - name: attempt to use cs2cpp package
       run:
         |
+        curl https://bootstrap.pypa.io/get-pip.py | python
         pip install cs2cpp==0.0.8
         python -c 'from cs2cpp import CSharpToCpp; print (CSharpToCpp().Transform(""))'
