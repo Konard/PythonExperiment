@@ -10,5 +10,5 @@ jobs:
     - name: attempt to use cs2cpp package
       run:
         |
-        python -m pip install cs2cpp
+        pip install cs2cpp==0.0.8
         python -c 'from cs2cpp import CSharpToCpp; print (CSharpToCpp().Transform(""))'
