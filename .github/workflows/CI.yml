@@ -12,6 +12,8 @@ jobs:
         |
         python3 -m pip install retranslator==0.0.7
         python3 -m pip install cs2cpp
-        python3 -c 'import retranslator, cs2cpp; retranslator.TranslatorCLI(args=["test.cs"], translator=cs2cpp.CSharpToCpp, extension=".cpp", useRegex=1)'
-        cat test.cpp
+        python3 -c 'import retranslator, cs2cpp; retranslator.TranslatorCLI(args=["test.cs","result/"], translator=cs2cpp.CSharpToCpp, extension=".cpp", useRegex=1)'
+        ls
+        ls result
+        cat result\test.cpp
         
